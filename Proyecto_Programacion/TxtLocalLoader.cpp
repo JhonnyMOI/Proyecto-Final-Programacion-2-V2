@@ -10,99 +10,98 @@ TxtLocalLoader::TxtLocalLoader() {
 TxtLocalLoader::~TxtLocalLoader() {
 }
 
-vector<Soldado*> TxtLocalLoader::loadSoldados() {
-    vector<Soldado*> soldados;
-    ifstream archivoSoldados("Soldados.txt", ios::in);
-    if (archivoSoldados.fail()) {
-        cout << "No se pudo abrir el archivo de Soldados" << endl;
-        archivoSoldados.close();
-        return soldados;
+vector<Officer*> TxtLocalLoader::loadOfficers() {
+    vector<Officer*> officers;
+    ifstream officersFile("Officers.txt", ios::in);
+    if (officersFile.fail()) {
+        cout << "Unable to open Officers file" << endl;
+        officersFile.close();
+        return officers;
     }
 
-    string nombre;
-    string apellido;
-    int edad=0;
-    string lugarVivienda;
-    bool apto = false;
-    string rango;
+    string name;
+    string lastName;
+    int age = 0;
+    string placeOfResidence;
+    bool suitable = false;
+    string rank;
 
-    while (archivoSoldados >> nombre >> apellido >>edad>>  lugarVivienda >> apto >> rango) {
-        soldados.push_back(new Soldado( nombre, apellido, edad, lugarVivienda, apto, rango));
+    while (officersFile >> name >> lastName >> age >> placeOfResidence >> suitable >> rank) {
+        officers.push_back(new Officer(name, lastName, age, placeOfResidence, suitable, rank));
     }
 
-    archivoSoldados.close();
-    return soldados;
+    officersFile.close();
+    return officers;
 }
 
-vector<Oficial*> TxtLocalLoader::loadOficiales() {
-    vector<Oficial*> oficiales;
-    ifstream archivoOficiales("Oficiales.txt", ios::in);
-    if (archivoOficiales.fail()) {
-        cout<< "No se pudo abrir el archivo de Oficiales" << endl;
-        archivoOficiales.close();
-        return oficiales;
+vector<SubOfficer*> TxtLocalLoader::loadSubOfficers() {
+    vector<SubOfficer*> subOfficers;
+    ifstream subOfficersFile("SubOfficers.txt", ios::in);
+    if (subOfficersFile.fail()) {
+        cout << "Unable to open subOfficers file" << endl;
+        subOfficersFile.close();
+        return subOfficers;
     }
 
-    string nombre;
-    string apellido;
-    int edad = 0;
-    string lugarVivienda;
-    bool apto = false;
-    string rango;
+    string name;
+    string lastName;
+    int age = 0;
+    string placeOfResidence;
+    bool suitable = false;
+    string grade;
 
-    while (archivoOficiales >> nombre >> apellido >> edad >> lugarVivienda >> apto >> rango) {
-        oficiales.push_back(new Oficial(nombre, apellido, edad, lugarVivienda, apto, rango));
+    while (subOfficersFile >> name >> lastName >> age >> placeOfResidence >> suitable >> grade) {
+        subOfficers.push_back(new SubOfficer(name, lastName, age, placeOfResidence, suitable, grade));
     }
 
-    archivoOficiales.close();
-    return oficiales;
+    subOfficersFile.close();
+    return subOfficers;
 }
 
-vector<Premilitar*> TxtLocalLoader::loadPremilitares() {
-    vector<Premilitar*> preMilitares;
-    ifstream archivoPreMilitares("PreMilitares.txt", ios::in);
-    if (archivoPreMilitares.fail()) {
-        cout<< "No se pudo abrir el archivo de PreMilitares" << endl;
-        archivoPreMilitares.close();
-        return preMilitares;
+vector<Soldier*> TxtLocalLoader::loadSoldiers() {
+    vector<Soldier*> soldiers;
+    ifstream soldiersFile("Soldiers.txt", ios::in);
+    if (soldiersFile.fail()) {
+        cout << "Unable to open Soldiers file" << endl;
+        soldiersFile.close();
+        return soldiers;
     }
 
-    string nombre;
-    string apellido;
-    int edad = 0;
-    string lugarVivienda;
-    bool apto = false;
-    string grado;
+    string name;
+    string lastName;
+    int age = 0;
+    string placeOfResidence;
+    bool suitable = false;
+    string rank;
 
-    while (archivoPreMilitares >> nombre >> apellido >> edad >> lugarVivienda >> apto >> grado) {
-        preMilitares.push_back(new Premilitar(nombre, apellido, edad, lugarVivienda, apto, grado));
+    while (soldiersFile >> name >> lastName >> age >> placeOfResidence >> suitable >> rank) {
+        soldiers.push_back(new Soldier(name, lastName, age, placeOfResidence, suitable, rank));
     }
 
-    archivoPreMilitares.close();
-    return preMilitares;
+    soldiersFile.close();
+    return soldiers;
 }
 
-
-vector<Suboficial*> TxtLocalLoader::loadSuboficiales() {
-    vector<Suboficial*> suboficiales;
-    ifstream archivosuboficiales("Suboficiales.txt", ios::in);
-    if (archivosuboficiales.fail()) {
-        cout << "No se pudo abrir el archivo de Oficiales" << endl;
-        archivosuboficiales.close();
-        return suboficiales;
+vector<PreMilitary*> TxtLocalLoader::loadPremilitaries() {
+    vector<PreMilitary*> premilitaries;
+    ifstream premilitariesFile("PreMilitaries.txt", ios::in);
+    if (premilitariesFile.fail()) {
+        cout << "Unable to open PreMilitaries file" << endl;
+        premilitariesFile.close();
+        return premilitaries;
     }
 
-    string nombre;
-    string apellido;
-    int edad = 0;
-    string lugarVivienda;
-    bool apto = false;
-    string grado;
+    string name;
+    string lastName;
+    int age = 0;
+    string placeOfResidence;
+    bool suitable = false;
+    string grade;
 
-    while (archivosuboficiales >> nombre >> apellido >> edad >> lugarVivienda >> apto >> grado) {
-        suboficiales.push_back(new Suboficial(nombre, apellido, edad, lugarVivienda, apto, grado));
+    while (premilitariesFile >> name >> lastName >> age >> placeOfResidence >> suitable >> grade) {
+        premilitaries.push_back(new PreMilitary(name, lastName, age, placeOfResidence, suitable, grade));
     }
 
-    archivosuboficiales.close();
-    return suboficiales;
+    premilitariesFile.close();
+    return premilitaries;
 }

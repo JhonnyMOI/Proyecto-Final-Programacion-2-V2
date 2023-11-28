@@ -5,10 +5,11 @@ class StaticLocalLoader : public LocalLoader
 {
 private:
 public:
-	StaticLocalLoader();
-	~StaticLocalLoader();
-	vector<Oficial* > loadOficiales();
-	vector<Suboficial* > loadSuboficiales();
-	vector<Soldado* > loadSoldados();
-	vector<Premilitar* > loadPremilitares();
+    StaticLocalLoader();
+    ~StaticLocalLoader();
+
+    vector<Officer*> loadOfficers();
+    vector<SubOfficer*> loadSubOfficers();
+    vector<Soldier*> loadSoldiers();
+    vector<PreMilitary*> loadPremilitaryPersonnel();
 };

@@ -128,44 +128,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Armamento.cpp" />
-    <ClCompile Include="BaseMilitar.cpp" />
-    <ClCompile Include="Blindados.cpp" />
-    <ClCompile Include="Lanzagranadas.cpp" />
+    <ClCompile Include="Armament.cpp" />
+    <ClCompile Include="MiltaryBase.cpp" />
+    <ClCompile Include="ArmoredVehicle.cpp" />
+    <ClCompile Include="GrenadeLauncher.cpp" />
     <ClCompile Include="LocalLoader.cpp" />
-    <ClCompile Include="Militar.cpp" />
-    <ClCompile Include="Oficial.cpp" />
-    <ClCompile Include="Persona.cpp" />
-    <ClCompile Include="Premilitar.cpp" />
+    <ClCompile Include="Officer.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="PreMilitary.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Registro.cpp" />
-    <ClCompile Include="Soldado.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="Soldier.cpp" />
     <ClCompile Include="StaticLocalLoader.cpp" />
-    <ClCompile Include="Suboficial.cpp" />
+    <ClCompile Include="SubOfficer.cpp" />
     <ClCompile Include="TxtLocalLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Armamento.h" />
-    <ClInclude Include="BaseMilitar.h" />
-    <ClInclude Include="Blindados.h" />
-    <ClInclude Include="Lanzagranadas.h" />
+    <ClInclude Include="Armament.h" />
+    <ClInclude Include="MilitaryBase.h" />
+    <ClInclude Include="ArmoredVehicle.h" />
+    <ClInclude Include="GrenadeLauncher.h" />
     <ClInclude Include="LocalLoader.h" />
-    <ClInclude Include="Militar.h" />
-    <ClInclude Include="MilitarTest.h" />
-    <ClInclude Include="Oficial.h" />
-    <ClInclude Include="Persona.h" />
-    <ClInclude Include="Premilitar.h" />
-    <ClInclude Include="Registro.h" />
-    <ClInclude Include="Soldado.h" />
+    <ClInclude Include="MilitaryTest.h" />
+    <ClInclude Include="Officer.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="PreMilitary.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="Soldier.h" />
     <ClInclude Include="StaticLocalLoader.h" />
-    <ClInclude Include="Suboficial.h" />
+    <ClInclude Include="SubOfficer.h" />
     <ClInclude Include="TxtLocalLoader.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Oficiales.txt" />
-    <Text Include="PreMilitares.txt" />
-    <Text Include="Soldados.txt" />
-    <Text Include="Suboficiales.txt" />
+    <Text Include="Officers.txt" />
+    <Text Include="PreMilitaries.txt" />
+    <Text Include="Soldiers.txt" />
+    <Text Include="SubOfficers.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

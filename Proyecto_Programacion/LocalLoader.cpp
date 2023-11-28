@@ -1,27 +1,23 @@
 #include "LocalLoader.h"
-LocalLoader::LocalLoader()
-{
+
+//LocalLoader::LocalLoader() {
+//}
+
+LocalLoader::~LocalLoader() {
 }
 
-LocalLoader::~LocalLoader()
-{
-}
-vector<Oficial*> LocalLoader::loadOficiales()
-{
-	return vector<Oficial*>();
+/*vector<Officer*> LocalLoader::loadOfficers() {
+    return vector<Officer*>();
 }
 
-vector<Suboficial*> LocalLoader::loadSuboficiales()
-{
-	return vector<Suboficial*>();
+vector<SubOfficer*> LocalLoader::loadSubOfficers() {
+    return vector<SubOfficer*>();
 }
 
-vector<Soldado*> LocalLoader::loadSoldados()
-{
-	return vector<Soldado*>();
+vector<Soldier*> LocalLoader::loadSoldiers() {
+    return vector<Soldier*>();
 }
 
-vector<Premilitar*> LocalLoader::loadPremilitares()
-{
-	return vector<Premilitar*>();
-}
+vector<PreMilitary*> LocalLoader::loadPreMilitaries() {
+    return vector<PreMilitary*>();
+}*/

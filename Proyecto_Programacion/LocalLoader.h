@@ -1,19 +1,18 @@
 #pragma once
-#include "Oficial.h"
-#include "Suboficial.h"
-#include "Soldado.h"
-#include "Premilitar.h"
+#include "Officer.h"
+#include "SubOfficer.h"
+#include "Soldier.h"
+#include "PreMilitary.h"
 #include <iostream>
+#include <vector>
 
-class LocalLoader
-{
+class LocalLoader {
 private:
 public:
-	  LocalLoader();
-	 ~LocalLoader();
-	virtual vector<Oficial*> loadOficiales() = 0;
-	virtual vector<Suboficial*> loadSuboficiales() = 0;
-	virtual vector<Soldado*> loadSoldados() = 0;
-	virtual vector<Premilitar*> loadPremilitares() = 0;
+    //LocalLoader();
+    ~LocalLoader();
+    virtual vector<Officer*> loadOfficers() = 0;
+    virtual vector<SubOfficer*> loadSubOfficers() = 0;
+    virtual vector<Soldier*> loadSoldiers() = 0;
+    virtual vector<PreMilitary*> loadPreMilitaries() = 0;
 };
-

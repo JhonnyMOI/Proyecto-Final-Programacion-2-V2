@@ -7,8 +7,8 @@ public:
     TxtLocalLoader();
     ~TxtLocalLoader();
 
-    std::vector<Oficial*> loadOficiales() ;
-    std::vector<Suboficial*> loadSuboficiales() ;
-    std::vector<Soldado*> loadSoldados() ;
-    std::vector<Premilitar*> loadPremilitares() ;
+    vector<Officer*> loadOfficers();
+    vector<SubOfficer*> loadSubOfficers();
+    vector<Soldier*> loadSoldiers();
+    vector<PreMilitary*> loadPremilitaries();
 };

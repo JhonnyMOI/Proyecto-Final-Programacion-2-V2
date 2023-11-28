@@ -10,61 +10,59 @@ StaticLocalLoader::~StaticLocalLoader()
 
 }
 
-vector<Oficial* > StaticLocalLoader::loadOficiales()
+vector<Officer*> StaticLocalLoader::loadOfficers()
 {
-
-	vector<Oficial* > oficiales;	
-	oficiales.push_back(new Oficial("Juan", "Perez", 35, "La_Paz", 1, "Teniente"));
-	oficiales.push_back(new Oficial("Maria", "Gomez", 28, "Cochabamba", 0, "Teniente_Coronel"));
-	oficiales.push_back(new Oficial("Luis", "Rodriguez", 42, "Santa_Cruz", 1, "Mayor"));
-	oficiales.push_back(new Oficial("Ana", "Lopez", 31, "Sucre", 1, "Teniente"));
-	oficiales.push_back(new Oficial("Carlos", "Garcia", 39, "Oruro", 0, "General_de_Brigada"));
-	oficiales.push_back(new Oficial("Laura", "Flores", 26, "Potosi", 1, "Subteniente"));
-	oficiales.push_back(new Oficial("Pedro", "Chavez", 37, "Tarija", 0, "Sargento"));
-	oficiales.push_back(new Oficial("Isabel", "Mendoza", 33, "Beni", 1, "Teniente"));
-	oficiales.push_back(new Oficial("Jorge", "Torres", 29, "Pando", 0, "Subteniente"));
-	oficiales.push_back(new Oficial("Fernanda", "Vargas", 36, "Trinidad", 1, "Capitan"));
-	return oficiales;
-
+    vector<Officer*> officers;
+    officers.push_back(new Officer("Juan", "Perez", 35, "La Paz", 1, "Lieutenant"));
+    officers.push_back(new Officer("Maria", "Gomez", 28, "Cochabamba", 0, "Lieutenant Colonel"));
+    officers.push_back(new Officer("Luis", "Rodriguez", 42, "Santa Cruz", 1, "Major"));
+    officers.push_back(new Officer("Ana", "Lopez", 31, "Sucre", 1, "Lieutenant"));
+    officers.push_back(new Officer("Carlos", "Garcia", 39, "Oruro", 0, "Brigadier General"));
+    officers.push_back(new Officer("Laura", "Flores", 26, "Potosi", 1, "Second Lieutenant"));
+    officers.push_back(new Officer("Pedro", "Chavez", 37, "Tarija", 0, "Sergeant"));
+    officers.push_back(new Officer("Isabel", "Mendoza", 33, "Beni", 1, "Lieutenant"));
+    officers.push_back(new Officer("Jorge", "Torres", 29, "Pando", 0, "Second Lieutenant"));
+    officers.push_back(new Officer("Fernanda", "Vargas", 36, "Trinidad", 1, "Captain"));
+    return officers;
 }
 
-vector<Suboficial* > StaticLocalLoader::loadSuboficiales()
+vector<SubOfficer*> StaticLocalLoader::loadSubOfficers()
 {
-	vector<Suboficial* > suboficiales;
-	suboficiales.push_back(new Suboficial("Juan", "Perez", 35, "La Paz", 1, "Sargento"));
-	suboficiales.push_back(new Suboficial("Maria", "Gomez", 28, "Cochabamba", 0, "Suboficial"));
-	suboficiales.push_back(new Suboficial("Luis", "Rodriguez", 42, "Santa Cruz", 1, "Suboficial_Mayor"));
-	suboficiales.push_back(new Suboficial("Ana", "Lopez", 31, "Sucre", 1, "Suboficial_Maestre"));
-	suboficiales.push_back(new Suboficial("Pedro", "Garcia", 39, "Oruro", 0, "Sargento"));
-	suboficiales.push_back(new Suboficial("Carla", "Flores", 26, "Potosi", 1, "Suboficial"));
-	suboficiales.push_back(new Suboficial("Mario", "Chavez", 33, "Tarija", 0, "Suboficial_Mayor"));
-	suboficiales.push_back(new Suboficial("Sofia", "Mendoza", 37, "Beni", 1, "Suboficial_Maestre"));
-	suboficiales.push_back(new Suboficial("Hugo", "Vargas", 29, "Pando", 0, "Sargento"));
-	suboficiales.push_back(new Suboficial("Laura", "Castro", 34, "Trinidad", 1, "Suboficial"));
-	return suboficiales;
+    vector<SubOfficer*> subOfficers;
+    subOfficers.push_back(new SubOfficer("Juan", "Perez", 35, "La Paz", 1, "Sergeant"));
+    subOfficers.push_back(new SubOfficer("Maria", "Gomez", 28, "Cochabamba", 0, "Sergeant"));
+    subOfficers.push_back(new SubOfficer("Luis", "Rodriguez", 42, "Santa Cruz", 1, "Senior Sergeant"));
+    subOfficers.push_back(new SubOfficer("Ana", "Lopez", 31, "Sucre", 1, "Master Sergeant"));
+    subOfficers.push_back(new SubOfficer("Pedro", "Garcia", 39, "Oruro", 0, "Sergeant"));
+    subOfficers.push_back(new SubOfficer("Carla", "Flores", 26, "Potosi", 1, "Sergeant"));
+    subOfficers.push_back(new SubOfficer("Mario", "Chavez", 33, "Tarija", 0, "Senior Sergeant"));
+    subOfficers.push_back(new SubOfficer("Sofia", "Mendoza", 37, "Beni", 1, "Master Sergeant"));
+    subOfficers.push_back(new SubOfficer("Hugo", "Vargas", 29, "Pando", 0, "Sergeant"));
+    subOfficers.push_back(new SubOfficer("Laura", "Castro", 34, "Trinidad", 1, "Sergeant"));
+    return subOfficers;
 }
 
-vector<Soldado* > StaticLocalLoader::loadSoldados()
+vector<Soldier*> StaticLocalLoader::loadSoldiers()
 {
-	vector<Soldado* > soldados;
-	soldados.push_back(new Soldado("Juan", "Perez", 25, "La Paz", 1, "Dragoneante"));
-	soldados.push_back(new Soldado("Maria", "Gonzalez", 28, "Cochabamba", 0, "Cabo"));
-	soldados.push_back(new Soldado("Luis", "Lopez", 30, "Santa Cruz", 1, "Raso"));
-	soldados.push_back(new Soldado("Ana", "Rodriguez", 23, "Sucre", 0, "Dragoneante"));
-	soldados.push_back(new Soldado("Pedro", "Chavez", 26, "Oruro", 1, "Cabo"));
-	return soldados;
+    vector<Soldier*> soldiers;
+    soldiers.push_back(new Soldier("Juan", "Perez", 25, "La Paz", 1, "Private"));
+    soldiers.push_back(new Soldier("Maria", "Gonzalez", 28, "Cochabamba", 0, "Corporal"));
+    soldiers.push_back(new Soldier("Luis", "Lopez", 30, "Santa Cruz", 1, "Private"));
+    soldiers.push_back(new Soldier("Ana", "Rodriguez", 23, "Sucre", 0, "Private"));
+    soldiers.push_back(new Soldier("Pedro", "Chavez", 26, "Oruro", 1, "Corporal"));
+    return soldiers;
 }
 
-vector<Premilitar* > StaticLocalLoader::loadPremilitares()
+vector<PreMilitary*> StaticLocalLoader::loadPremilitaryPersonnel()
 {
-	vector<Premilitar* > premilitares;
-	premilitares.push_back(new Premilitar("Juan", "Perez", 25, "La_Paz", 1, "Sin_Grado"));
-	premilitares.push_back(new Premilitar("Maria", "Gonzalez", 22, "Cochabamba", 0, "Sin_Grado"));
-	premilitares.push_back(new Premilitar("Carlos", "Lopez", 28, "Santa_Cruz", 1, "Sin_Grado"));
-	premilitares.push_back(new Premilitar("Ana", "Rodriguez", 20, "Sucre", 1, "Sin_Grado"));
-	premilitares.push_back(new Premilitar("Luis", "Chavez", 24, "Oruro", 0, "Sin_Grado"));
-	premilitares.push_back(new Premilitar("Laura", "Flores", 26, "Potosi", 1, "Sin_Grado"));
-	premilitares.push_back(new Premilitar("Pedro", "Mendoza", 23, "Tarija", 0, "Sin_Grado"));
-	premilitares.push_back(new Premilitar("Sofia", "Vargas", 21, "Beni", 1, "Sin_Grado"));
-	return premilitares;
+    vector<PreMilitary*> premilitaries;
+    premilitaries.push_back(new PreMilitary("Juan", "Perez", 25, "La Paz", 1, "No_Rank"));
+    premilitaries.push_back(new PreMilitary("Maria", "Gonzalez", 22, "Cochabamba", 0, "No_Rank"));
+    premilitaries.push_back(new PreMilitary("Carlos", "Lopez", 28, "Santa Cruz", 1, "No_Rank"));
+    premilitaries.push_back(new PreMilitary("Ana", "Rodriguez", 20, "Sucre", 1, "No_Rank"));
+    premilitaries.push_back(new PreMilitary("Luis", "Chavez", 24, "Oruro", 0, "No_Rank"));
+    premilitaries.push_back(new PreMilitary("Laura", "Flores", 26, "Potosi", 1, "No_Rank"));
+    premilitaries.push_back(new PreMilitary("Pedro", "Mendoza", 23, "Tarija", 0, "No_Rank"));
+    premilitaries.push_back(new PreMilitary("Sofia", "Vargas", 21, "Beni", 1, "No_Rank"));
+    return premilitaries;
 }

@@ -18,25 +18,22 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Militar.cpp">
+    <ClCompile Include="Registry.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Registro.cpp">
+    <ClCompile Include="Officer.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Oficial.cpp">
+    <ClCompile Include="Person.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Persona.cpp">
+    <ClCompile Include="PreMilitary.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Premilitar.cpp">
+    <ClCompile Include="Soldier.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Soldado.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Suboficial.cpp">
+    <ClCompile Include="SubOfficer.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="StaticLocalLoader.cpp">
@@ -45,42 +42,39 @@
     <ClCompile Include="LocalLoader.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Armamento.cpp">
+    <ClCompile Include="Armament.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Blindados.cpp">
+    <ClCompile Include="ArmoredVehicle.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Lanzagranadas.cpp">
+    <ClCompile Include="GrenadeLauncher.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="TxtLocalLoader.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="BaseMilitar.cpp">
+    <ClCompile Include="MiltaryBase.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Militar.h">
+    <ClInclude Include="Registry.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Registro.h">
+    <ClInclude Include="Officer.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Oficial.h">
+    <ClInclude Include="Person.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Persona.h">
+    <ClInclude Include="PreMilitary.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Premilitar.h">
+    <ClInclude Include="Soldier.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Soldado.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Suboficial.h">
+    <ClInclude Include="SubOfficer.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="StaticLocalLoader.h">
@@ -89,36 +83,36 @@
     <ClInclude Include="LocalLoader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Armamento.h">
+    <ClInclude Include="Armament.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Blindados.h">
+    <ClInclude Include="ArmoredVehicle.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Lanzagranadas.h">
+    <ClInclude Include="GrenadeLauncher.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="TxtLocalLoader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="BaseMilitar.h">
+    <ClInclude Include="MilitaryBase.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="MilitarTest.h">
+    <ClInclude Include="MilitaryTest.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Soldados.txt">
+    <Text Include="Soldiers.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
-    <Text Include="Oficiales.txt">
+    <Text Include="Officers.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
-    <Text Include="PreMilitares.txt">
+    <Text Include="PreMilitaries.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
-    <Text Include="Suboficiales.txt">
+    <Text Include="SubOfficers.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
   </ItemGroup>

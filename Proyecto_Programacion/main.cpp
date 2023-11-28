@@ -1,29 +1,29 @@
 #include "StaticLocalLoader.h"
-#include "Registro.h"
+#include "Registry.h"
 #include <iostream>
-#include "MilitarTest.h"
+#include "MilitaryTest.h"
 
 using namespace std;
 
 void executeTests()
 {
-    MilitarTest::testOfficerCanBeRegistered();
-    MilitarTest::testSubOfficerCanBeRegistered();
-    MilitarTest::testSoldierCanBeRegistered();
-    MilitarTest::testPreMilitaryCanBeRegistered();
-    MilitarTest::testGrenadeLauncherCanBeRegistered();
-    MilitarTest::testShowMilitaryMemberByRank();
-    MilitarTest::testMilitaryMemberIsSuitable();
+    MilitaryTest::testOfficerCanBeRegistered();
+    MilitaryTest::testSubOfficerCanBeRegistered();
+    MilitaryTest::testSoldierCanBeRegistered();
+    MilitaryTest::testPreMilitaryCanBeRegistered();
+    MilitaryTest::testGrenadeLauncherCanBeRegistered();
+    MilitaryTest::testShowMilitaryMemberByRank();
+    MilitaryTest::testMilitaryMemberIsSuitable();
 }
 
 int main()
 {
     LocalLoader* loader = new StaticLocalLoader();
 
-    Registro registro(loader);
-    registro.run();
+    Registry registry(loader);
+    registry.run();
 
-    //Descomentar la siguiente linea de codigo para correr todos los tests
+    // Descomentar la siguiente linea de codigo para correr todos los tests
     executeTests();
 
     return 0;
