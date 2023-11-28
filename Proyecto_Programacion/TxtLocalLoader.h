@@ -10,5 +10,5 @@ public:
     vector<Officer*> loadOfficers();
     vector<SubOfficer*> loadSubOfficers();
     vector<Soldier*> loadSoldiers();
-    vector<PreMilitary*> loadPremilitaries();
+    vector<PreMilitary*> loadPreMilitaries();
 };

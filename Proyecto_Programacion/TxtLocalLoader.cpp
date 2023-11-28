@@ -82,7 +82,7 @@ vector<Soldier*> TxtLocalLoader::loadSoldiers() {
     return soldiers;
 }
 
-vector<PreMilitary*> TxtLocalLoader::loadPremilitaries() {
+vector<PreMilitary*> TxtLocalLoader::loadPreMilitaries() {
     vector<PreMilitary*> premilitaries;
     ifstream premilitariesFile("PreMilitaries.txt", ios::in);
     if (premilitariesFile.fail()) {

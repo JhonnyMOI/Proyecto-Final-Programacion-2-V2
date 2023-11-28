@@ -7,10 +7,8 @@
 #include <vector>
 
 class LocalLoader {
-private:
 public:
-    //LocalLoader();
-    ~LocalLoader();
+    virtual ~LocalLoader();
     virtual vector<Officer*> loadOfficers() = 0;
     virtual vector<SubOfficer*> loadSubOfficers() = 0;
     virtual vector<Soldier*> loadSoldiers() = 0;

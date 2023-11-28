@@ -12,11 +12,11 @@
 #include <iostream>
 #include <string>
 #include "LocalLoader.h"
+#include "StaticLocalLoader.h"
 
 using namespace std;
 
 class Registry {
-
 private:
 
     vector<Officer*> officers;
@@ -32,7 +32,6 @@ private:
     vector<string> availableSoldierRanks = { "Private", "Corporal", "Sergeant" };
     vector<string> availableRanks = { "No_Rank", "Private", "Corporal", "Sergeant", "SubOfficer", "Senior_SubOfficer", "Chief_SubOfficer", "Sublieutenant", "Lieutenant", "Captain", "Major", "Lieutenant_Colonel", "Colonel", "Brigadier_General", "Division_General", "Army_General" };
 
-    //void showMenu();
     void registerOfficer();// OPTION 1
     void registerSubOfficer();// OPTION 2
     void registerSoldier();// OPTION 3
@@ -55,8 +54,8 @@ private:
     bool validateRank(string newRank, vector<string> availableRanks);
     MilitaryBase militaryBase;
 public:
+    Registry(LocalLoader *loader);
     ~Registry();
-    Registry(LocalLoader* loader);
 
     void run();
 };

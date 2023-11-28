@@ -179,7 +179,6 @@ void Registry::run()
     } while (option != 0);
 }
 
-// Modify the code in the Record file
 void Registry::loadDataFromFile(const string& fileName)
 {
     ifstream file(fileName);
@@ -785,26 +784,3 @@ void Registry::registerGrenadeLauncher() {
     GrenadeLauncher* grenadeLauncher = new GrenadeLauncher(name, type, caliber, origin, serialNumber);
     armaments.push_back(grenadeLauncher);
 }
-    /*
-    void Registro::registrarCoheteMisil() {
-        string nombre, tipo, calibre, origen;
-        int numeroSerie, cantidad;
-
-        cout << "Nombre: ";
-        cin >> nombre;
-        cout << "Tipo: ";
-        cin >> tipo;
-        cout << "Calibre: ";
-        cin >> calibre;
-        cout << "Origen: ";
-        cin >> origen;
-        cout << "Número de Serie: ";
-        cin >> numeroSerie;
-        cout << "Cantidad: ";
-        cin >> cantidad;
-
-        CohetesMisiles* coheteMisil = new CohetesMisiles(nombre, tipo, calibre, origen, numeroSerie, cantidad);
-        armamentos.push_back(coheteMisil);
-    }   
-    */
-
