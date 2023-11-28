@@ -14,7 +14,7 @@ public:
 
     void showInfo();
     string getName();
-    void setSoldierRank(string newRank);
+    void setRank(string newRank);
     string getRank();
     bool isSuitable();
 };

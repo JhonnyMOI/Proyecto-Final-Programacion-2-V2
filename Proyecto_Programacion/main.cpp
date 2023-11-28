@@ -24,7 +24,7 @@ int main()
     registry.run();
 
     // Descomentar la siguiente linea de codigo para correr todos los tests
-    executeTests();
+    //executeTests();
 
     return 0;
 }

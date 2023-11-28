@@ -51,7 +51,7 @@ void Registry::run()
         cout << "* 6. Show fit personnel                                                *" << endl;
         cout << "* 7. Show unfit personnel                                              *" << endl;
         cout << "* 8. Promote Officer                                                   *" << endl;
-        cout << "* 9. Promote Subfficer                                                 *" << endl;
+        cout << "* 9. Promote SubOfficer                                                 *" << endl;
         cout << "* 10. Promote Soldier                                                  *" << endl;
         cout << "* 11. Show all personnel                                               *" << endl;
         cout << "* 12. Register Weapon                                                  *" << endl;
@@ -535,9 +535,10 @@ void Registry::promoteOfficer()// SECTION 8
             if (officer->getName() == name)
             {
                 showRanks();
-                cout << "Enter the new rank: ";
-                cin >> newRank;
-                validateRank(newRank, availableOfficerRanks);
+                do {
+                    cout << "Enter the new rank: ";
+                    cin >> newRank;
+                } while (validateRank(newRank, availableOfficerRanks) == false);
                 officer->setRank(newRank);
                 cout << officer->getName() << " was promoted successfully" << endl;
                 continue;
@@ -566,9 +567,10 @@ void Registry::promoteSubOfficer()// SECTION 9
             if (subOfficer->getName() == name)
             {
                 showRanks();
-                cout << "Enter the new rank: ";
-                cin >> newRank;
-                validateRank(newRank, availableSubOfficerRanks);
+                do {
+                    cout << "Enter the new rank: ";
+                    cin >> newRank;
+                } while (validateRank(newRank, availableSubOfficerRanks) == false);
                 subOfficer->setRank(newRank);
                 cout << subOfficer->getName() << " was promoted successfully" << endl;
                 continue;
@@ -597,9 +599,10 @@ void Registry::promoteSoldier()// SECTION 10
             if (soldier->getName() == name)
             {
                 showRanks();
-                cout << "Enter the new rank: ";
-                cin >> newRank;
-                validateRank(newRank, availableSoldierRanks);
+                do {
+                    cout << "Enter the new rank: ";
+                    cin >> newRank;
+                } while (validateRank(newRank, availableSoldierRanks) == false);
                 soldier->setRank(newRank);
                 cout << soldier->getName() << " was promoted successfully" << endl;
                 continue;

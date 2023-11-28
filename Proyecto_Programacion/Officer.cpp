@@ -35,3 +35,8 @@ string Officer::getRank()
 {
     return rank;
 }
+
+void Officer::setRank(string newRank)
+{
+    this->rank = newRank;
+}

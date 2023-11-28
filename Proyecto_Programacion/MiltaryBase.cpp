@@ -24,7 +24,7 @@ void MilitaryBase::showPersonnel() const
 {
     for (const auto& person : personnel)
     {
-        person->showInfo();
+        //person->showInfo();
         std::cout << "-------------------------" << std::endl;
     }
 }

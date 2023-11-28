@@ -22,11 +22,11 @@ void Soldier::showInfo()
     cout << "Place of Residence: " << placeOfResidence << endl;
     if (suitable == 1)
     {
-        cout << "Fit: YES" << endl;
+        cout << "Is suitable?: YES" << endl;
     }
     if (suitable == 0)
     {
-        cout << "Fit: NO" << endl;
+        cout << "Is suitable?: NO" << endl;
     }
     cout << "Rank: " << rank << endl;
 }
@@ -36,7 +36,7 @@ string Soldier::getName()
     return name;
 }
 
-void Soldier::setSoldierRank(string newRank)
+void Soldier::setRank(string newRank)
 {
     this->rank = newRank;
 }

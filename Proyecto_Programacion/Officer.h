@@ -11,4 +11,5 @@ public:
     ~Officer();
     void showInfo();
     string getRank();
+    void setRank(string newRank);
 };

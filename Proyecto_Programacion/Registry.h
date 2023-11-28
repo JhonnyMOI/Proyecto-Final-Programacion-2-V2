@@ -30,7 +30,7 @@ private:
     vector<string> availableOfficerRanks = { "Sublieutenant", "Lieutenant", "Captain", "Major", "Lieutenant_Colonel", "Colonel", "Brigadier_General", "Division_General", "Army_General" };
     vector<string> availableSubOfficerRanks = { "Sergeant", "SubOfficer", "Senior_SubOfficer", "Chief_SubOfficer" };
     vector<string> availableSoldierRanks = { "Private", "Corporal", "Sergeant" };
-    vector<string> availableRanks = { "No_Rank", "Private", "Corporal", "Sergeant", "SubOfficer", "Senior_SubOfficer", "Chief_SubOfficer", "Sublieutenant", "Lieutenant", "Captain", "Major", "Lieutenant_Colonel", "Colonel", "Brigadier_General", "Division_General", "Army_General" };
+    vector<string> availableRanks = { "No_Rank", "Private", "Corporal", "Sergeant", "SubOfficer", "Senior_SubOfficer", "Chief_Subofficer", "Sublieutenant", "Lieutenant", "Captain", "Major", "Lieutenant_Colonel", "Colonel", "Brigadier_General", "Division_General", "Army_General" };
 
     void registerOfficer();// OPTION 1
     void registerSubOfficer();// OPTION 2
@@ -47,7 +47,7 @@ private:
     void registerArmoredVehicle();
     void registerWeapon();
     void registerGrenadeLauncher();
-    void loadDataFromFile(const std::string& fileName);
+    void loadDataFromFile(const string& fileName);
     void showRanks();
     bool validateResponse(string response);
     int defineSuitable(string response);
