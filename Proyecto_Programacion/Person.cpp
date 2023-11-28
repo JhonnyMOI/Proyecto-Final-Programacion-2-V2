@@ -1,22 +1,5 @@
 #include "Person.h"
 
-/*Person::Person(string name, string surname, int age, string placeOfResidence,
-    bool suitable)//, string rank)
-{
-    this->name = name;
-    this->surname = surname;
-    this->age = age;
-    this->placeOfResidence = placeOfResidence;
-    this->suitable = suitable;
-    //this->rank = rank;
-}*/
-
-/*Person::Person(string name, string surname, int age, string placeOfResidence, bool suitable, string rank)
-{
-
-}
-*/
-
 Person::~Person()
 {
 }

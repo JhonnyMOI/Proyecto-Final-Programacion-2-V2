@@ -3,7 +3,6 @@
 using namespace std;
 
 class Person {
-
 public:
     string name, surname, placeOfResidence, rank;
     int age;

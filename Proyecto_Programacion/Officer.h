@@ -2,7 +2,7 @@
 #include "Person.h"
 
 class Officer : public Person {
-private:
+protected:
     string rank;
 
 public:
